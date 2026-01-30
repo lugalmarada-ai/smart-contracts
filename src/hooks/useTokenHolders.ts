@@ -8,7 +8,7 @@ export function useTokenHolders() {
   const [holdersCount, setHoldersCount] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const OKY_TOKEN_ADDRESS = CONTRACT_ADDRESSES.OKYToken;
+  const OKY_TOKEN_ADDRESS = CONTRACT_ADDRESSES.OKYToken as `0x${string}`;
 
   // Read total supply from contract
   const { data: totalSupply } = useReadContract({
