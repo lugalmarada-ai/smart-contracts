@@ -2843,7 +2843,6 @@ export const OKY_PRESALE_ABI = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-	}
 ];
 
 // 3. OKY Staking Contract
