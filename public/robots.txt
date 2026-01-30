@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.basedokmaya.xyz/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /__next/
+
+# Allow important pages
+Allow: /assets/
+Allow: /logo_real.png

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKMAYA REALMS | Epic Adventures in the Crypto Multiverse</title>
+    <meta name="description" content="Battle monsters, collect rare NFTs, and earn $OKY tokens in the ultimate browser RPG experience built on the Base blockchain.">
+    <meta name="keywords" content="OKMAYA REALMS, $OKY, RPG, NFT, Play-to-Earn, Base blockchain, crypto game">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+        h1, h2, h3, h4, h5, h6, .font-pixel {
+            font-family: 'VT323', monospace;
+        }
+        .font-title {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .bg-deep-purple { background-color: #4A148C; }
+        .text-gold { color: #FFD700; }
+        .border-gold { border-color: #FFD700; }
+        .bg-emerald-green { background-color: #00C853; }
+        .text-silver { color: #C0C0C0; }
+
+        .btn {
+            @apply px-8 py-3 rounded-full font-bold text-lg transition-all duration-300;
+        }
+        .btn-primary {
+            @apply bg-gold text-deep-purple hover:bg-yellow-300 transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-deep-purple;
+        }
+        .btn-tertiary {
+            @apply bg-emerald-green text-white hover:bg-green-400;
+        }
+        .glass-card {
+            @apply bg-black/30 backdrop-blur-lg border border-white/10 rounded-2xl;
+        }
+        .particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="overflow-x-hidden">
+    <div id="particle-bg" class="particle-bg"></div>
+
+    <header class="sticky top-0 z-50 bg-black/60 backdrop-blur-xl border-b border-gold/20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3">
+                <img src="assets/images/logo.png" class="h-12" alt="OKMAYA REALMS Logo">
+                <span class="text-2xl font-title text-gold hidden sm:block">OKMAYA REALMS</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-lg font-pixel">
+                <a href="#game" class="hover:text-gold transition-colors">Game</a>
+                <a href="#tokenomics" class="hover:text-gold transition-colors">Tokenomics</a>
+                <a href="#roadmap" class="hover:text-gold transition-colors">Roadmap</a>
+                <a href="#team" class="hover:text-gold transition-colors">Team</a>
+            </div>
+
+            <a href="#guild" class="hidden md:block btn btn-tertiary !px-6 !py-2">Join Guild</a>
+
+            <button id="menu-btn" class="md:hidden block text-white">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-6 pt-2 pb-6 flex flex-col items-center space-y-4 font-pixel text-xl">
+                <a href="#game" class="hover:text-gold transition-colors">Game</a>
+                <a href="#tokenomics" class="hover:text-gold transition-colors">Tokenomics</a>
+                <a href="#roadmap" class="hover:text-gold transition-colors">Roadmap</a>
+                <a href="#team" class="hover:text-gold transition-colors">Team</a>
+                <a href="#guild" class="w-full text-center btn btn-tertiary mt-4">Join Guild</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 bg-deep-purple opacity-80"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/hero-bg.png'); opacity: 0.1;"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-title text-gold">OKMAYA REALMS</h1>
+                <p class="text-2xl md:text-3xl font-pixel mt-4 text-silver">Epic Adventures Await in the Crypto Multiverse</p>
+                
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#play" class="btn btn-primary">PLAY NOW</a>
+                    <a href="#trailer" class="btn btn-secondary">View Trailer</a>
+                </div>
+
+                <p class="mt-12 text-lg max-w-2xl mx-auto text-gray-300">
+                    "Battle monsters, collect rare NFTs, and earn $OKY tokens in the ultimate browser RPG experience built on Base blockchain"
+                </p>
+
+                <div class="mt-12 w-full max-w-2xl mx-auto aspect-video bg-black/50 rounded-2xl border-2 border-gold/50 flex items-center justify-center font-pixel text-2xl text-gray-400">
+                    [ Interactive 8-bit character demo placeholder ]
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="py-24 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">GAME OVERVIEW</h2>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div id="game-container" class="w-full aspect-video bg-black rounded-2xl border-2 border-gold/50 flex items-center justify-center font-pixel text-2xl text-gray-400">
+                        <!-- Phaser game will be rendered here -->
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">Turn-based Combat</p></div>
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">NFT Progression</p></div>
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">Guilds & PvP</p></div>
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">Daily Quests</p></div>
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">NFT Marketplace</p></div>
+                        <div class="glass-card p-6"><p class="font-pixel text-lg">Cross-platform</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tokenomics" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">TOKENOMICS 2.0</h2>
+                    <p class="text-xl text-silver mt-2">Gaming-Focused Utility for $OKY</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-emerald-green mb-6">$OKY Token Utility</h3>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> In-game purchases (weapons, armor)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Guild creation & management fees</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Tournament entry fees</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> NFT crafting & upgrading</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Exclusive area access passes</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Staking for passive rewards (APY: 12-18%)</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver mb-6">Total Supply: 1 Billion $OKY</h3>
+                        <div class="space-y-4 text-lg">
+                            <p><strong>40%</strong> Game rewards & player incentives</p>
+                            <p><strong>20%</strong> Development & updates</p>
+                            <p><strong>15%</strong> Marketing & partnerships</p>
+                            <p><strong>15%</strong> Liquidity pool</p>
+                            <p><strong>10%</strong> Team (24-month vesting)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="py-24 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">DEVELOPMENT ROADMAP</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver">Q4 2025</h3>
+                        <p class="font-bold text-lg mb-4">Foundation</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Core game mechanics</li>
+                            <li>Basic character classes</li>
+                            <li>$OKY integration</li>
+                            <li>Beta testing (1,000 players)</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8 border-gold/50">
+                        <h3 class="text-3xl font-pixel text-gold">Q1 2026</h3>
+                        <p class="font-bold text-lg mb-4">Enhancement</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Guild system launch</li>
+                            <li>PvP arena implementation</li>
+                            <li>NFT marketplace integration</li>
+                            <li>Mobile-responsive optimization</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver">Q2 2026</h3>
+                        <p class="font-bold text-lg mb-4">Expansion</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>New realms & dungeons</li>
+                            <li>Advanced crafting system</li>
+                            <li>Cross-chain bridge (ETH)</li>
+                            <li>Esports tournament series</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">THE TEAM</h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-24 h-24 rounded-full bg-deep-purple mx-auto mb-4 border-2 border-gold flex items-center justify-center">[Avatar]</div>
+                        <h3 class="text-2xl font-pixel">Game Dev Lead</h3>
+                        <p class="text-silver">"10+ years AAA gaming experience"</p>
+                    </div>
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-24 h-24 rounded-full bg-deep-purple mx-auto mb-4 border-2 border-gold flex items-center justify-center">[Avatar]</div>
+                        <h3 class="text-2xl font-pixel">Blockchain Architect</h3>
+                        <p class="text-silver">"DeFi protocol veteran"</p>
+                    </div>
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-24 h-24 rounded-full bg-deep-purple mx-auto mb-4 border-2 border-gold flex items-center justify-center">[Avatar]</div>
+                        <h3 class="text-2xl font-pixel">Community Manager</h3>
+                        <p class="text-silver">"Built 3 successful gaming communities"</p>
+                    </div>
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-24 h-24 rounded-full bg-deep-purple mx-auto mb-4 border-2 border-gold flex items-center justify-center">[Avatar]</div>
+                        <h3 class="text-2xl font-pixel">Art Director</h3>
+                        <p class="text-silver">"Award-winning pixel art specialist"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/50 border-t border-gold/20 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <img src="assets/images/logo.png" class="h-16 mx-auto mb-6" alt="OKMAYA REALMS Footer Logo">
+            <div class="flex justify-center space-x-6">
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-telegram fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+            <p class="text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+                <strong>Disclaimer:</strong> $OKY is a utility token for the OKMAYA REALMS ecosystem. Its value is derived from its utility within the game. All investments carry risk.
+            </p>
+            <p class="text-xs text-gray-600 mt-8">&copy; 2025 OKMAYA REALMS. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple particle effect
+        const particleBg = document.getElementById('particle-bg');
+        for (let i = 0; i < 50; i++) {
+            let particle = document.createElement('div');
+            particle.style.position = 'absolute';
+            particle.style.width = `${Math.random() * 3}px`;
+            particle.style.height = particle.style.width;
+            particle.style.borderRadius = '50%';
+            particle.style.backgroundColor = 'rgba(255, 215, 0, 0.5)';
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animation = `float ${Math.random() * 10 + 5}s ease-in-out infinite`;
+            particleBg.appendChild(particle);
+        }
+
+        const keyframes = `
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }`;
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = keyframes;
+        document.head.appendChild(styleSheet);
+    </script>
+    </div>
+</body>
+</html>

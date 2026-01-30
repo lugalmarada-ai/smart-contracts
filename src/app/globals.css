@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0F172A;
+  --foreground: #e2e8f0;
+  --primary: #8B5CF6;
+  --secondary: #3B82F6;
+  --accent: #10B981;
+  --card-bg: rgba(255, 255, 255, 0.05);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-card-bg: var(--card-bg);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@utility glass-card {
+  @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-lg rounded-2xl;
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+}
+
+@utility btn-primary {
+  @apply px-8 py-3 rounded-full font-bold text-white bg-gradient-to-r from-primary to-secondary hover:brightness-110 transition-all shadow-[0_0_20px_rgba(139,92,246,0.5)];
+}
+
+@utility btn-secondary {
+  @apply px-8 py-3 rounded-full font-bold text-white border border-primary/50 hover:bg-primary/20 transition-all;
 }

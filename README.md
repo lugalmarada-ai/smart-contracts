@@ -1,36 +1,239 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 OKMAYA REALMS
 
-## Getting Started
+**Epic Space Battles in the Crypto Galaxy**
 
-First, run the development server:
+A browser-based space shooter game built on Base blockchain with $OKY token utility, presale, staking, and NFT integration.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![OKMAYA REALMS](./public/logo_real.png)
+
+---
+
+## 🎮 About
+
+OKMAYA REALMS is a Xenon 2-inspired space shooter game where players pilot advanced spacecraft, battle alien fleets, and earn $OKY tokens. Built on the Base network (Ethereum L2) for low-cost, fast transactions.
+
+### Key Features
+- 🎯 **Turn-based space combat**
+- 🪙 **$OKY token economy** - ERC-20 utility token
+- 🎁 **100% presale bonus** - Early supporters get double tokens
+- 💎 **Staking rewards** - 5-12% APY across 4 tiers
+- 🎨 **NFT spaceship upgrades**
+- 🏆 **Tournaments & leaderboards**
+- 🌐 **Cross-platform browser gameplay**
+
+---
+
+## 💎 Tokenomics
+
+### $OKY Token
+- **Total Supply**: 1,000,000,000 (1 Billion)
+- **Symbol**: OKY
+- **Blockchain**: Base (Chain ID: 8453)
+- **Contract**: `0x924b9eDD2A175f15918f32185584616111BfF9bB`
+
+### Allocation
+```
+40% (400M) - Game Rewards       🎮 Distributed through gameplay
+15% (150M) - Development        🛠️ Team & infrastructure
+7%  (70M)  - Marketing          📢 Growth & partnerships
+3%  (30M)  - Airdrop            🎁 Community rewards
+10% (100M) - Presale            💰 Early supporters
+15% (150M) - Liquidity          💧 DEX pools
+10% (100M) - Team               👥 Vested over 11 months
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔥 Presale Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Active Now! ✅
 
-## Learn More
+- **Presale Price**: $0.0035 per OKY
+- **Launch Price**: $0.01 per OKY
+- **Bonus**: 100% extra tokens (buy 1, get 2!)
+- **Target Raise**: $150,000 USD
+- **Payment Methods**: ETH or USDC on Base
+- **Contract**: `0x84a80139FB3658815f5D28905CB6697a89eCD6c6`
 
-To learn more about Next.js, take a look at the following resources:
+### Example
+- Pay: 100 USDC
+- Get: 28,571 OKY base + 28,571 bonus = **57,142 OKY**
+- Value at launch: $571.42 (5.7x return)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👉 **Buy now:** [https://www.basedokmaya.xyz/](https://www.basedokmaya.xyz/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🥩 Staking
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Stake $OKY to earn passive rewards with our tiered APY system:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Tier | Lock Period | APY | Contract |
+|------|-------------|-----|----------|
+| **Flexible** | No lock | 5% | `0xa0e3E800...` |
+| **Bronze** | 30 days | 7% | `0xa0e3E800...` |
+| **Silver** | 90 days | 9% | `0xa0e3E800...` |
+| **Gold** | 180 days | 12% | `0xa0e3E800...` |
+
+- ✅ Multiple simultaneous stakes
+- ✅ Claim rewards without unstaking
+- ✅ Minimum stake: 100 OKY
+- ✅ Funded from game rewards pool
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Web3**: RainbowKit + Wagmi + Viem
+
+### Blockchain
+- **Network**: Base Mainnet
+- **Contracts**: Solidity ^0.8.20
+- **Libraries**: OpenZeppelin 5.x
+- **Oracles**: Chainlink (ETH/USD)
+
+---
+
+## 📦 Smart Contracts
+
+All contracts verified on BaseScan:
+
+| Contract | Address | Status |
+|----------|---------|--------|
+| **OKYToken** | `0x924b9eDD2A175f15918f32185584616111BfF9bB` | ✅ Deployed |
+| **OKYPresale** | `0x84a80139FB3658815f5D28905CB6697a89eCD6c6` | ✅ Deployed |
+| **OKYStaking** | `0xa0e3E8006910820584a66a4310c6f67eaf697D11` | ✅ Deployed |
+| **OKYAirdrop** | `0x00CDF1c1581539C70C833ecE4a24e34dde1c4DD1` | ✅ Deployed |
+| **OKYVesting** | TBD | 🔄 Pending |
+
+📄 [View on BaseScan](https://basescan.org/address/0x924b9eDD2A175f15918f32185584616111BfF9bB)
+
+---
+
+## 🚀 Quick Start
+
+### For Users
+1. Visit [https://www.basedokmaya.xyz/](https://www.basedokmaya.xyz/)
+2. Connect your wallet (MetaMask, Coinbase, etc.)
+3. Buy $OKY with ETH or USDC
+4. Stake for passive rewards
+5. Wait for game launch and start earning!
+
+### For Developers
+
+#### Prerequisites
+- Node.js 20+
+- npm or yarn
+
+#### Installation
+```bash
+# Clone repository
+git clone https://github.com/okmaya/okmaya-realms.git
+cd okmaya-realms
+
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.example .env.local
+# Edit .env.local and add your WalletConnect Project ID
+
+# Run development server
+npm run dev
+```
+
+Visit http://localhost:3000
+
+#### Build for Production
+```bash
+npm run build
+# Static files exported to /out/
+```
+
+---
+
+## 📚 Documentation
+
+- [Deployment Guide](./DEPLOYMENT.md) - How to deploy frontend and contracts
+- [Optimization Guide](./OPTIMIZATION.md) - Performance and image optimization
+- [Smart Contracts README](./smartcontracts/README.md) - Contract details and deployment
+- [Liquidity Strategy](./smartcontracts/_legacy/ESTRATEGIA_LIQUIDEZ.md) - Launch plan
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Phase 1: Foundation (Q4 2024)
+- [x] Smart contracts development
+- [x] Token deployment on Base
+- [x] Presale contract
+- [x] Staking mechanism
+- [x] Landing page
+
+### 🔄 Phase 2: Launch (Q1 2025)
+- [x] Presale live
+- [ ] Game beta testing
+- [ ] Airdrop campaign
+- [ ] CEX/DEX listings
+
+### 🔜 Phase 3: Expansion (Q2 2025)
+- [ ] Full game launch
+- [ ] NFT marketplace
+- [ ] Guild system
+- [ ] Tournaments
+
+### 🌟 Phase 4: Scale (Q3 2025)
+- [ ] Mobile app
+- [ ] Cross-chain bridge
+- [ ] Advanced gameplay features
+- [ ] DAO governance
+
+---
+
+## 🔐 Security
+
+- ✅ OpenZeppelin audited libraries
+- ✅ ReentrancyGuard on critical functions
+- ✅ Pausable contracts for emergencies
+- ✅ Time-locked liquidity (6 months)
+- ✅ Gradual team/dev vesting
+- 🔄 Full audit pending
+
+---
+
+## 🌐 Links
+
+- **Website**: [basedokmaya.xyz](https://www.basedokmaya.xyz/)
+- **Telegram**: [t.me/okmayarealms](https://t.me/okmayarealms)
+- **Twitter**: [@OkmayaRealms](https://twitter.com/OkmayaRealms)
+- **Instagram**: [@okmayarealms](https://instagram.com/okmayarealms)
+- **Discord**: [discord.gg/okmaya](https://discord.gg/okmaya)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](./LICENSE) file for details
+
+---
+
+## ⚠️ Disclaimer
+
+Cryptocurrency investments carry risk. Do your own research (DYOR) before participating in the presale or purchasing $OKY tokens. This is not financial advice.
+
+---
+
+**Built with 💜 by the OKMAYA Team**
+
+*Conquer the Galaxy, Earn $OKY!*

@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://okmaya.xyz/sitemap.xml
+
+# Allow game assets
+Allow: /assets/
+Allow: /images/
+Allow: /deployer/
+Allow: /stake/
+
+# Disallow sensitive files
+Disallow: /.env
+Disallow: /config/
+Disallow: /private/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+

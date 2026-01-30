@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>OKMAYA REALMS | Epic Space Battles in the Crypto Galaxy</title>
+    <meta name="description" content="Pilot advanced spacecraft, battle alien fleets, and earn $OKY tokens in the ultimate space shooter experience built on the Base blockchain.">
+    <meta name="keywords" content="OKMAYA REALMS, $OKY, Space Shooter, NFT, Play-to-Earn, Base blockchain, crypto game, Xenon 2">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.basedokmaya.xyz/">
+    <meta property="og:title" content="OKMAYA REALMS | Epic Space Battles in the Crypto Galaxy">
+    <meta property="og:description" content="🚀 **CONQUER THE GALAXY & EARN $OKY!** ⚡ Pilot epic spacecraft 👽 Battle massive alien fleets 💎 **Revolutionary Earn-to-Play** on Base blockchain 🎮 **The future of space shooters awaits!** 🌌 Ready to dominate the cosmos? 💫">
+    <meta property="og:image" content="https://www.basedokmaya.xyz/okmaya-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.basedokmaya.xyz/">
+    <meta property="twitter:title" content="OKMAYA REALMS | Epic Space Battles in the Crypto Galaxy">
+    <meta property="twitter:description" content="🚀 **CONQUER THE GALAXY & EARN $OKY!** ⚡ Pilot epic spacecraft 👽 Battle massive alien fleets 💎 **Revolutionary Earn-to-Play** on Base blockchain 🎮 **The future of space shooters awaits!** 🌌">
+    <meta property="twitter:image" content="https://www.basedokmaya.xyz/okmaya-social.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "OKMAYA REALMS",
+        "alternateName": "$OKY",
+        "url": "https://okmaya.xyz",
+        "image": "https://okmaya.xyz/assets/images/logo.png",
+        "description": "Pilot advanced spacecraft, battle alien fleets, and earn $OKY tokens in the ultimate space shooter experience built on the Base blockchain.",
+        "genre": "Space Shooter",
+        "gamePlatform": ["Web Browser", "Mobile"],
+        "playMode": ["SinglePlayer", "MultiPlayer"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+            "Play-to-Earn",
+            "NFT Integration",
+            "Space Combat",
+            "Fleet Management",
+            "Cryptocurrency Rewards"
+        ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Mobile Optimization CSS -->
+    <link rel="stylesheet" href="assets/css/mobile-optimization.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            width: 100vw;
+            max-width: 100vw;
+        }
+        h1, h2, h3, h4, h5, h6, .font-pixel {
+            font-family: 'VT323', monospace;
+        }
+        .font-title {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .bg-deep-purple { background-color: #4A148C; }
+        .text-gold { color: #FFD700; }
+        .border-gold { border-color: #FFD700; }
+        .bg-emerald-green { background-color: #00C853; }
+        .text-silver { color: #C0C0C0; }
+        .bg-space { background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%); }
+        .text-cyan { color: #00FFFF; }
+        .border-cyan { border-color: #00FFFF; }
+
+        .btn {
+            @apply px-8 py-3 rounded-full font-bold text-lg transition-all duration-300;
+        }
+        .btn-primary {
+            @apply bg-gold text-deep-purple hover:bg-yellow-300 transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-deep-purple;
+        }
+        .btn-tertiary {
+            @apply bg-emerald-green text-white hover:bg-green-400;
+        }
+        .glass-card {
+            @apply bg-black/30 backdrop-blur-lg border border-white/10 rounded-2xl;
+        }
+        .particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            max-width: 100vw;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        /* Mobile-specific overrides */
+        @media (max-width: 768px) {
+            .particle-bg {
+                display: none; /* Disable particles on mobile for better performance */
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="overflow-x-hidden">
+    <div id="particle-bg" class="particle-bg"></div>
+
+    <header class="sticky top-0 z-50 bg-black/60 backdrop-blur-xl border-b border-gold/20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3">
+                <img src="assets/images/logo.png" class="h-12" alt="OKMAYA REALMS Logo">
+                <span class="text-2xl font-title text-gold hidden sm:block">OKMAYA REALMS</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-lg font-pixel">
+                <a href="#trailer" class="hover:text-gold transition-colors">Trailer</a>
+                <a href="#game" class="hover:text-gold transition-colors">Game</a>
+                <a href="#tokenomics" class="hover:text-gold transition-colors">Tokenomics</a>
+                <a href="#liquidity" class="hover:text-gold transition-colors">Liquidity</a>
+                <a href="#roadmap" class="hover:text-gold transition-colors">Roadmap</a>
+                <a href="#team" class="hover:text-gold transition-colors">Team</a>
+            </div>
+
+            <a href="#guild" class="hidden md:block btn btn-tertiary !px-6 !py-2">Join Fleet</a>
+
+            <button id="menu-btn" class="md:hidden block text-white">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-6 pt-2 pb-6 flex flex-col items-center space-y-4 font-pixel text-xl">
+                <a href="#trailer" class="hover:text-gold transition-colors">Trailer</a>
+                <a href="#game" class="hover:text-gold transition-colors">Game</a>
+                <a href="#tokenomics" class="hover:text-gold transition-colors">Tokenomics</a>
+                <a href="#liquidity" class="hover:text-gold transition-colors">Liquidity</a>
+                <a href="#roadmap" class="hover:text-gold transition-colors">Roadmap</a>
+                <a href="#team" class="hover:text-gold transition-colors">Team</a>
+                <a href="#guild" class="w-full text-center btn btn-tertiary mt-4">Join Fleet</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 bg-space opacity-90"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/game/backgrounds/space_bg.png'); opacity: 0.3;"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-title text-gold">OKMAYA REALMS</h1>
+                <p class="text-2xl md:text-3xl font-pixel mt-4 text-silver">Epic Space Battles Await in the Crypto Galaxy</p>
+                
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#play" class="btn btn-primary">PLAY NOW</a>
+                    <a href="#trailer" class="btn btn-secondary">View Trailer</a>
+                </div>
+
+                <p class="mt-12 text-lg max-w-2xl mx-auto text-gray-300">
+                    "Pilot advanced spacecraft, battle alien fleets, and earn $OKY tokens in the ultimate space shooter experience built on Base blockchain"
+                </p>
+            </div>
+        </section>
+
+        <section id="trailer" class="py-24 bg-gray-900/30">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">GAME TRAILER</h2>
+                    <p class="text-xl text-silver mt-2">Experience the Epic Space Battles</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="aspect-video bg-black rounded-2xl border-2 border-gold/50 overflow-hidden">
+                        <video 
+                            controls 
+                            class="w-full h-full object-cover"
+                            poster="assets/images/game/backgrounds/space_bg.png"
+                            preload="metadata"
+                        >
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                            <p class="text-center text-white p-8">
+                                Your browser does not support the video tag. 
+                                <a href="assets/video/video.mp4" class="text-gold hover:underline">Download the video</a>
+                            </p>
+                        </video>
+                    </div>
+                    <div class="text-center mt-8">
+                        <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                            Witness the intense space battles, advanced ship mechanics, and stunning visuals that await you in OKMAYA REALMS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="py-24 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">SPACE BATTLE OVERVIEW</h2>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/6.png" alt="Combat System" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Intense Combat</h3>
+                            <p class="text-sm text-gray-300">Real-time space battles with strategic depth</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/7.png" alt="Ship Upgrades" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Ship Evolution</h3>
+                            <p class="text-sm text-gray-300">Upgrade weapons, armor, and special abilities</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/8.png" alt="Fleet System" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Fleet Command</h3>
+                            <p class="text-sm text-gray-300">Lead massive fleet battles across the galaxy</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/10.png" alt="Campaign Mode" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Epic Campaigns</h3>
+                            <p class="text-sm text-gray-300">Explore star systems and complete missions</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/11.png" alt="NFT Ships" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">NFT Arsenal</h3>
+                            <p class="text-sm text-gray-300">Collect and trade unique spacecraft NFTs</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/12.png" alt="Cross Platform" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Multi-Platform</h3>
+                            <p class="text-sm text-gray-300">Play seamlessly across all your devices</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/13.png" alt="Advanced AI" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Smart AI</h3>
+                            <p class="text-sm text-gray-300">Adaptive enemy AI that learns your tactics</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/14.png" alt="Power Cores" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Power Cores</h3>
+                            <p class="text-sm text-gray-300">Collect rare energy cores for ultimate power</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/15.png" alt="Weapon Systems" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Arsenal Mastery</h3>
+                            <p class="text-sm text-gray-300">Master dozens of unique weapon systems</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/16.png" alt="Space Stations" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Space Stations</h3>
+                            <p class="text-sm text-gray-300">Build and defend strategic outposts</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/17.png" alt="Galactic Economy" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Cosmic Trade</h3>
+                            <p class="text-sm text-gray-300">Participate in the galactic economy</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/18.png" alt="Alliance System" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Star Alliances</h3>
+                            <p class="text-sm text-gray-300">Form powerful alliances with other pilots</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/19.png" alt="Exploration" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Deep Space</h3>
+                            <p class="text-sm text-gray-300">Explore uncharted regions of the galaxy</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/20.png" alt="Tournament Mode" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Championships</h3>
+                            <p class="text-sm text-gray-300">Compete in galactic tournaments for glory</p>
+                        </div>
+                        <div class="glass-card p-6 hover:scale-105 transition-transform">
+                            <div class="mb-4">
+                                <img src="assets/elements/21.png" alt="Legendary Rewards" class="w-16 h-16 mx-auto object-contain">
+                            </div>
+                            <h3 class="font-pixel text-lg text-gold mb-2">Epic Rewards</h3>
+                            <p class="text-sm text-gray-300">Earn legendary loot and $OKY tokens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tokenomics" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">TOKENOMICS 2.0</h2>
+                    <p class="text-xl text-silver mt-2">Gaming-Focused Utility for $OKY</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-emerald-green mb-6">$OKY Token Utility</h3>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Ship upgrades & weapons</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Fleet formation & management</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Tournament entry fees</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> NFT ship crafting & upgrading</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Exclusive sector access passes</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-green mr-3"></i> Staking for passive rewards (APY: 12-18%)</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver mb-6">Total Supply: 1 Billion $OKY</h3>
+                        <div class="space-y-4 text-lg">
+                            <p><strong>40%</strong> Game rewards & player incentives</p>
+                            <p><strong>20%</strong> Development & updates</p>
+                            <p><strong>15%</strong> Marketing & partnerships</p>
+                            <p><strong>15%</strong> Liquidity pool</p>
+                            <p><strong>10%</strong> Team (24-month vesting)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="py-24 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">DEVELOPMENT ROADMAP</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver">Q4 2025</h3>
+                        <p class="font-bold text-lg mb-4">Foundation</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Core space combat mechanics</li>
+                            <li>Basic ship classes & weapons</li>
+                            <li>$OKY integration</li>
+                            <li>Beta testing (1,000 pilots)</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8 border-gold/50">
+                        <h3 class="text-3xl font-pixel text-gold">Q1 2026</h3>
+                        <p class="font-bold text-lg mb-4">Enhancement</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Fleet system launch</li>
+                            <li>PvP space battles</li>
+                            <li>NFT ship marketplace</li>
+                            <li>Mobile-responsive optimization</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h3 class="text-3xl font-pixel text-silver">Q2 2026</h3>
+                        <p class="font-bold text-lg mb-4">Expansion</p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>New star systems & sectors</li>
+                            <li>Advanced ship crafting</li>
+                            <li>Cross-chain bridge (ETH)</li>
+                            <li>Space tournament series</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="liquidity" class="py-24 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">LIQUIDITY STRATEGY</h2>
+                    <p class="text-xl text-silver mt-2">Building from Zero to Hero</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-8">
+                        <div class="text-4xl mb-4 text-center">🚀</div>
+                        <h3 class="text-2xl font-pixel text-cyan mb-4">Phase 1: Community Building</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Free-to-play base game</li>
+                            <li>• Airdrop campaigns for early adopters</li>
+                            <li>• Referral program with $OKY rewards</li>
+                            <li>• Beta testing with exclusive rewards</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8 border-gold/50">
+                        <div class="text-4xl mb-4 text-center">⚡</div>
+                        <h3 class="text-2xl font-pixel text-gold mb-4">Phase 2: Revenue Generation</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>• NFT ship marketplace (5% commission)</li>
+                            <li>• Staking rewards (15-20% APY)</li>
+                            <li>• Tournament prizes and competitions</li>
+                            <li>• Premium ship upgrades</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8">
+                        <div class="text-4xl mb-4 text-center">🌌</div>
+                        <h3 class="text-2xl font-pixel text-emerald-green mb-4">Phase 3: Liquidity Growth</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Liquidity provider incentives</li>
+                            <li>• DEX partnerships and listings</li>
+                            <li>• Cross-chain bridge integration</li>
+                            <li>• DeFi protocol collaborations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <div class="glass-card p-8 max-w-4xl mx-auto">
+                        <h3 class="text-3xl font-pixel text-gold mb-6">Revenue Streams</h3>
+                        <div class="grid md:grid-cols-2 gap-6 text-left">
+                            <div>
+                                <h4 class="text-xl font-pixel text-cyan mb-3">Primary Sources</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li>• Marketplace commissions: 5% of all sales</li>
+                                    <li>• Microtransactions: Energy, upgrades</li>
+                                    <li>• NFT sales: Exclusive ships and items</li>
+                                    <li>• Staking fees: 2% of rewards</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-pixel text-cyan mb-3">Secondary Sources</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li>• In-game advertising</li>
+                                    <li>• Premium subscriptions</li>
+                                    <li>• Tournament entry fees</li>
+                                    <li>• Partnership sponsorships</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-pixel text-gold">THE TEAM</h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="glass-card p-6 text-center hover:scale-105 transition-transform">
+                        <img src="assets/images/team/captain_nexus.png" alt="Captain Nexus" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-gold object-cover">
+                        <h3 class="text-2xl font-pixel text-gold">Captain Nexus</h3>
+                        <p class="text-silver">"Fleet Commander & Game Director"</p>
+                        <p class="text-xs text-gray-500 mt-2">10+ years AAA gaming experience</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:scale-105 transition-transform">
+                        <img src="assets/images/team/engineer_stella.png" alt="Engineer Stella" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-gold object-cover">
+                        <h3 class="text-2xl font-pixel text-gold">Engineer Stella</h3>
+                        <p class="text-silver">"Blockchain & Ship Systems Architect"</p>
+                        <p class="text-xs text-gray-500 mt-2">DeFi protocol veteran</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:scale-105 transition-transform">
+                        <img src="assets/images/team/pilot_vex.png" alt="Pilot Vex" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-gold object-cover">
+                        <h3 class="text-2xl font-pixel text-gold">Pilot Vex</h3>
+                        <p class="text-silver">"Community & Fleet Operations"</p>
+                        <p class="text-xs text-gray-500 mt-2">Built 3 successful gaming communities</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:scale-105 transition-transform">
+                        <img src="assets/images/team/commander_aura.png" alt="Commander Aura" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-gold object-cover">
+                        <h3 class="text-2xl font-pixel text-gold">Commander Aura</h3>
+                        <p class="text-silver">"Visual Design & Space Art"</p>
+                        <p class="text-xs text-gray-500 mt-2">Award-winning pixel art specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/50 border-t border-gold/20 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <img src="assets/images/logo.png" class="h-16 mx-auto mb-6" alt="OKMAYA REALMS Footer Logo">
+            <div class="flex justify-center space-x-6">
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-telegram fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gold transition-transform hover:scale-125"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+            <p class="text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+                <strong>Disclaimer:</strong> $OKY is a utility token for the OKMAYA REALMS space battle ecosystem. Its value is derived from its utility within the game. All investments carry risk.
+            </p>
+            <p class="text-xs text-gray-600 mt-8">&copy; 2025 OKMAYA REALMS. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Enhanced space particle effect
+        const particleBg = document.getElementById('particle-bg');
+        
+        // Create different types of particles
+        const particleTypes = [
+            { color: 'rgba(255, 215, 0, 0.6)', size: 2, speed: 8 },
+            { color: 'rgba(0, 255, 255, 0.4)', size: 1, speed: 12 },
+            { color: 'rgba(255, 255, 255, 0.8)', size: 1, speed: 6 },
+            { color: 'rgba(255, 100, 100, 0.3)', size: 3, speed: 4 }
+        ];
+        
+        for (let i = 0; i < 80; i++) {
+            const type = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+            let particle = document.createElement('div');
+            particle.style.position = 'absolute';
+            particle.style.width = `${type.size}px`;
+            particle.style.height = `${type.size}px`;
+            particle.style.borderRadius = '50%';
+            particle.style.backgroundColor = type.color;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animation = `float ${type.speed}s ease-in-out infinite`;
+            particle.style.boxShadow = `0 0 ${type.size * 2}px ${type.color}`;
+            particleBg.appendChild(particle);
+        }
+
+        const keyframes = `
+        @keyframes float {
+            0% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.3; }
+            25% { transform: translateY(-15px) translateX(10px) scale(1.1); opacity: 0.8; }
+            50% { transform: translateY(-30px) translateX(-5px) scale(0.9); opacity: 1; }
+            75% { transform: translateY(-15px) translateX(5px) scale(1.05); opacity: 0.6; }
+            100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.3; }
+        }`;
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = keyframes;
+        document.head.appendChild(styleSheet);
+    </script>
+    </div>
+</body>
+</html>
