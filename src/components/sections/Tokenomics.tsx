@@ -11,8 +11,8 @@ export default function Tokenomics() {
         { label: "Marketing", value: 7, color: "#8B5CF6", vesting: "6 months cliff, 12 months linear" },
         { label: "Airdrop", value: 3, color: "#F472B6", vesting: "Immediate unlock" },
         { label: "Presale", value: 10, color: "#00FFFF", vesting: "Immediate unlock" },
-        { label: "Liquidity", value: 15, color: "#EC4899", vesting: "Locked 12 months via smart contract" },
-        { label: "Team", value: 10, color: "#F59E0B", vesting: "6 months cliff, 12 months linear" },
+        { label: "Liquidity", value: 15, color: "#EC4899", vesting: "Locked 6 months via smart contract" },
+        { label: "Team", value: 10, color: "#F59E0B", vesting: "1 month cliff, 11 months linear (Verified)" },
     ];
 
     const TOKEN_ADDRESS = CONTRACT_ADDRESSES.OKYToken;

@@ -138,7 +138,9 @@ export default function PresaleCard() {
                 {/* Header */}
                 <div className="flex justify-between items-center mb-6">
                     <div>
-                        <h3 className="text-xl font-bold font-press-start text-white">Presale is Live</h3>
+                        <h3 className="text-xl font-bold font-press-start text-white">
+                            {presaleActive ? 'Presale is Live' : 'Presale Inactive'}
+                        </h3>
                         <p className="text-xs text-gray-400 mt-1 font-mono">Price: ${PRESALE_PRICE} + {BONUS_PERCENTAGE}% Bonus</p>
                     </div>
                     <div className={`flex items-center gap-2 ${presaleActive ? 'bg-green-500/10 border-green-500/50' : 'bg-red-500/10 border-red-500/50'} border px-3 py-1 rounded-full`}>
