@@ -29,7 +29,7 @@ OKMAYA REALMS is a Xenon 2-inspired space shooter game where players pilot advan
 - **Total Supply**: 1,000,000,000 (1 Billion)
 - **Symbol**: OKY
 - **Blockchain**: Base (Chain ID: 8453)
-- **Contract**: `0x924b9eDD2A175f15918f32185584616111BfF9bB`
+- **Contract**: `0x2986E9aD5d5a570F873afee62bF1F6b65eAeF14f`
 
 ### Allocation
 ```
@@ -53,7 +53,7 @@ OKMAYA REALMS is a Xenon 2-inspired space shooter game where players pilot advan
 - **Bonus**: 100% extra tokens (buy 1, get 2!)
 - **Target Raise**: $150,000 USD
 - **Payment Methods**: ETH or USDC on Base
-- **Contract**: `0x84a80139FB3658815f5D28905CB6697a89eCD6c6`
+- **Contract**: `0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9`
 
 ### Example
 - Pay: 100 USDC
@@ -70,10 +70,10 @@ Stake $OKY to earn passive rewards with our tiered APY system:
 
 | Tier | Lock Period | APY | Contract |
 |------|-------------|-----|----------|
-| **Flexible** | No lock | 5% | `0xa0e3E800...` |
-| **Bronze** | 30 days | 7% | `0xa0e3E800...` |
-| **Silver** | 90 days | 9% | `0xa0e3E800...` |
-| **Gold** | 180 days | 12% | `0xa0e3E800...` |
+| **Flexible** | No lock | 5% | `0x80d31BA6...` |
+| **Bronze** | 30 days | 7% | `0x80d31BA6...` |
+| **Silver** | 90 days | 9% | `0x80d31BA6...` |
+| **Gold** | 180 days | 12% | `0x80d31BA6...` |
 
 - ✅ Multiple simultaneous stakes
 - ✅ Claim rewards without unstaking
@@ -105,13 +105,13 @@ All contracts verified on BaseScan:
 
 | Contract | Address | Status |
 |----------|---------|--------|
-| **OKYToken** | `0x924b9eDD2A175f15918f32185584616111BfF9bB` | ✅ Deployed |
-| **OKYPresale** | `0x84a80139FB3658815f5D28905CB6697a89eCD6c6` | ✅ Deployed |
-| **OKYStaking** | `0xa0e3E8006910820584a66a4310c6f67eaf697D11` | ✅ Deployed |
-| **OKYAirdrop** | `0x00CDF1c1581539C70C833ecE4a24e34dde1c4DD1` | ✅ Deployed |
-| **OKYVesting** | TBD | 🔄 Pending |
+| **OKYToken** | `0x2986E9aD5d5a570F873afee62bF1F6b65eAeF14f` | ✅ Deployed |
+| **OKYPresale** | `0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9` | ✅ Deployed |
+| **OKYStaking** | `0x80d31BA6AbcBb3f6Fcb124aa9B16C9346a04989c` | ✅ Deployed |
+| **OKYAirdrop** | `0x7A70b7333f3b637937e5D562cAf269B30254Fe04` | ✅ Deployed |
+| **OKYVesting** | `0xCdeC5F4734CB111D3ab63B72dc0df11f60254463` | ✅ Deployed |
 
-📄 [View on BaseScan](https://basescan.org/address/0x924b9eDD2A175f15918f32185584616111BfF9bB)
+📄 [View on BaseScan](https://basescan.org/address/0x2986E9aD5d5a570F873afee62bF1F6b65eAeF14f)
 
 ---
 
