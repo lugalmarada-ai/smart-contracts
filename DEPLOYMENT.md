@@ -50,10 +50,11 @@ Contracts are already deployed on Base Mainnet:
 
 ### Deployed Addresses
 ```
-OKYToken:     0x924b9eDD2A175f15918f32185584616111BfF9bB
-OKYPresale:   0x84a80139FB3658815f5D28905CB6697a89eCD6c6
-OKYStaking:   0xa0e3E8006910820584a66a4310c6f67eaf697D11
-OKYAirdrop:   0x00CDF1c1581539C70C833ecE4a24e34dde1c4DD1
+OKYToken:     0x2986E9aD5d5a570F873afee62bF1F6b65eAeF14f
+OKYPresale:   0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9
+OKYStaking:   0x80d31BA6AbcBb3f6Fcb124aa9B16C9346a04989c
+OKYAirdrop:   0x7A70b7333f3b637937e5D562cAf269B30254Fe04
+OKYVesting:   0xCdeC5F4734CB111D3ab63B72dc0df11f60254463
 ```
 
 ### Post-Deployment Tasks
@@ -62,14 +63,14 @@ OKYAirdrop:   0x00CDF1c1581539C70C833ecE4a24e34dde1c4DD1
 Transfer presale allocation tokens to presale contract:
 ```solidity
 // From presale wallet, transfer 100M OKY to presale contract
-OKYToken.transfer(0x84a80139FB3658815f5D28905CB6697a89eCD6c6, 100000000 * 10**18)
+OKYToken.transfer(0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9, 100000000 * 10**18)
 ```
 
 #### 2. Fund Staking Reward Pool
 Transfer game rewards to staking contract:
 ```solidity
 // From game rewards wallet, transfer tokens to staking contract
-OKYToken.transfer(0xa0e3E8006910820584a66a4310c6f67eaf697D11, AMOUNT)
+OKYToken.transfer(0x80d31BA6AbcBb3f6Fcb124aa9B16C9346a04989c, AMOUNT)
 // Then fund reward pool
 OKYStaking.fundRewardPool(AMOUNT)
 ```
@@ -78,10 +79,12 @@ OKYStaking.fundRewardPool(AMOUNT)
 Transfer airdrop allocation in batches:
 ```solidity
 // From airdrop wallet, transfer tokens
-OKYToken.transfer(0x00CDF1c1581539C70C833ecE4a24e34dde1c4DD1, BATCH_AMOUNT)
+OKYToken.transfer(0x7A70b7333f3b637937e5D562cAf269B30254Fe04, BATCH_AMOUNT)
 ```
 
-#### 4. Deploy Vesting Contract (Pending)
+#### 4. Setup Vesting Contract
+Vesting is already deployed at `0xCdeC5F4734CB111D3ab63B72dc0df11f60254463`.
+If you need to redeploy:
 ```bash
 cd smartcontracts
 # Deploy OKYVesting.sol with constructor parameters
@@ -107,10 +110,10 @@ cd smartcontracts
 ### Check Contract Balances
 ```bash
 # Check OKY balance of presale contract
-cast balance 0x84a80139FB3658815f5D28905CB6697a89eCD6c6 --rpc-url https://mainnet.base.org
+cast balance 0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9 --rpc-url https://mainnet.base.org
 
 # Check presale progress
-cast call 0x84a80139FB3658815f5D28905CB6697a89eCD6c6 "getPresaleProgress()" --rpc-url https://mainnet.base.org
+cast call 0x8D2ae4C7B0b4FC0776a8D90fbC723D9426D264D9 "getPresaleProgress()" --rpc-url https://mainnet.base.org
 ```
 
 ---
