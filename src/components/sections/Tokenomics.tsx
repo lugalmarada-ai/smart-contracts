@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCheckCircle, FaCoins, FaChartPie, FaExternalLinkAlt, FaLock, FaUsers } from "react-icons/fa";
+import { FaCheckCircle, FaCoins, FaChartPie, FaExternalLinkAlt, FaLock, FaUsers, FaShieldAlt } from "react-icons/fa";
 import { CONTRACT_ADDRESSES } from "@/config/contracts";
 
 export default function Tokenomics() {
