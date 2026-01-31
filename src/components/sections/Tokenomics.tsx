@@ -201,7 +201,17 @@ export default function Tokenomics() {
                     <div className="mt-8 p-4 bg-accent/10 border border-accent/30 rounded-lg">
                         <p className="text-sm text-gray-300 text-center">
                             🔒 <strong className="text-white">Team & Development tokens</strong> are vested to ensure long-term commitment.{" "}
-                            <strong className="text-accent">Liquidity is locked for 12 months</strong> to protect investors.
+                            <strong className="text-accent">Liquidity is locked for 6 months</strong> (Verified On-Chain).
+                        </p>
+                    </div>
+
+                    <div className="mt-6 p-4 bg-white/5 border border-white/10 rounded-lg">
+                        <div className="flex items-center gap-2 mb-2">
+                            <FaShieldAlt className="text-primary text-sm" />
+                            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Security & Audit Status</h4>
+                        </div>
+                        <p className="text-xs text-gray-400 leading-relaxed">
+                            Core contracts are currently undergoing thorough <span className="text-white font-bold">internal review</span>. An independent professional audit with leading security firms is scheduled for <span className="text-secondary font-bold">Q1 2026</span> to ensure maximum safety for all participants.
                         </p>
                     </div>
                 </motion.div>

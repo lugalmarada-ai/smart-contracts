@@ -39,7 +39,7 @@ OKMAYA REALMS is a Xenon 2-inspired space shooter game where players pilot advan
 3%  (30M)  - Airdrop            🎁 Community rewards
 10% (100M) - Presale            💰 Early supporters
 15% (150M) - Liquidity          💧 DEX pools
-10% (100M) - Team               👥 Vested over 11 months
+10% (100M) - Team               👥 1 month cliff, 11 months linear (Verified)
 ```
 
 ---
@@ -166,43 +166,34 @@ npm run build
 
 ---
 
-## 🗺️ Roadmap
+### 🚀 Phase 1: Foundation & Growth (Q1 2026)
+- [x] Smart contracts verified on BaseScan
+- [x] Public Presale Live
+- [ ] Community building (Discord/TG)
+- [🔄] **$OKY Token Audit (In Progress)**
 
-### ✅ Phase 1: Foundation (Q4 2024)
-- [x] Smart contracts development
-- [x] Token deployment on Base
-- [x] Presale contract
-- [x] Staking mechanism
-- [x] Landing page
+### 🛠️ Phase 2: Alpha Systems (Q2 2026)
+- [ ] Core combat mechanics
+- [ ] Staking v1 Launch
+- [ ] Closed Alpha testing
+- [ ] Initial DEX Listing
 
-### 🔄 Phase 2: Launch (Q1 2025)
-- [x] Presale live
-- [ ] Game beta testing
-- [ ] Airdrop campaign
-- [ ] CEX/DEX listings
-
-### 🔜 Phase 3: Expansion (Q2 2025)
-- [ ] Full game launch
-- [ ] NFT marketplace
-- [ ] Guild system
-- [ ] Tournaments
-
-### 🌟 Phase 4: Scale (Q3 2025)
-- [ ] Mobile app
-- [ ] Cross-chain bridge
-- [ ] Advanced gameplay features
-- [ ] DAO governance
+### 🔜 Phase 3: Beta Expansion (Q3 2026)
+- [ ] Fleet management system
+- [ ] NFT ship crafting
+- [ ] Beta testing (1,000 pilots)
+- [ ] CEX Listing applications
 
 ---
 
-## 🔐 Security
-
-- ✅ OpenZeppelin audited libraries
-- ✅ ReentrancyGuard on critical functions
-- ✅ Pausable contracts for emergencies
-- ✅ Time-locked liquidity (6 months)
-- ✅ Gradual team/dev vesting
-- 🔄 Full audit pending
+## 🔐 Security & Transparency
+ 
+ - ✅ **OpenZeppelin Standard**: Built using production-ready, industry-standard contract libraries.
+ - ✅ **Verified Source**: All contracts are verified and readable on [BaseScan](https://basescan.org/address/0x2986E9aD5d5a570F873afee62bF1F6b65eAeF14f).
+ - ✅ **Liquidity Lock**: LP tokens are locked for **6 months** via the audited `OKYVesting` contract (Verified On-Chain).
+ - ✅ **Team Vesting**: 1 month cliff + 11 months linear release to prevent dumping.
+ - 🛡️ **Internal Review**: Current code has undergone multiple rounds of peer internal review.
+ - 🔄 **Public Audit**: An independent professional audit (CertiK/PeckShield) is currently **scheduled/in progress** for Q1 2026.
 
 ---
 

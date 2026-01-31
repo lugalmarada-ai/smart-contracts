@@ -8,7 +8,7 @@ const phases = [
         quarter: "Q1 2026",
         title: "Foundation & Growth",
         icon: <FaRocket />,
-        items: ["Contracts deployed on Base", "Public Presale Active", "Community building (Discord/TG)", "$OKY Token Audit"],
+        items: ["Contracts deployed on Base", "Public Presale Active", "Community building (Discord/TG)", "$OKY Token Audit (In Progress)"],
         color: "text-white"
     },
     {

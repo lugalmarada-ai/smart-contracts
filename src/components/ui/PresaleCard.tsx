@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaEthereum, FaWallet, FaInfoCircle, FaDollarSign, FaCheckCircle, FaGithub, FaTelegram, FaUsers, FaCopy } from "react-icons/fa";
+import { FaEthereum, FaWallet, FaInfoCircle, FaDollarSign, FaCheckCircle, FaGithub, FaTelegram, FaUsers, FaCopy, FaShieldAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi';
@@ -376,6 +376,19 @@ export default function PresaleCard() {
                                 <FaCopy className="text-gray-400 hover:text-white" />
                             )}
                         </button>
+                    </div>
+                </div>
+
+                {/* Security Trust Badge */}
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-4 py-3 border-y border-white/5">
+                    <div className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+                        <FaShieldAlt className="text-primary text-xs" />
+                        <span className="text-[10px] text-gray-400 font-mono">Contract Verified</span>
+                    </div>
+                    <div className="h-3 w-px bg-white/10 hidden sm:block"></div>
+                    <div className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+                        <FaInfoCircle className="text-secondary text-xs" />
+                        <span className="text-[10px] text-gray-400 font-mono italic">Audit: In Progress</span>
                     </div>
                 </div>
 
