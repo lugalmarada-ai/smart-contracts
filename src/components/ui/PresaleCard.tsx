@@ -9,6 +9,7 @@ import { useAccount } from 'wagmi';
 import { usePresale } from '@/hooks/usePresale';
 import { useUSDC } from '@/hooks/useUSDC';
 import { useTokenHolders } from '@/hooks/useTokenHolders';
+import { useVesting } from '@/hooks/useVesting';
 import { formatEther } from 'viem';
 import { CONTRACT_ADDRESSES } from '@/config/contracts';
 import CountdownTimer from '@/components/ui/CountdownTimer';
@@ -41,6 +42,8 @@ export default function PresaleCard() {
         approve,
         isApproving
     } = useUSDC();
+
+    const { liquidity, isLoaded: vestingLoaded } = useVesting();
 
     const { tokenAddress, holdersCount } = useTokenHolders();
 
@@ -383,7 +386,9 @@ export default function PresaleCard() {
                 <div className="mt-6 flex flex-wrap items-center justify-center gap-4 py-3 border-y border-white/5">
                     <div className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
                         <FaShieldAlt className="text-primary text-xs" />
-                        <span className="text-[10px] text-gray-400 font-mono">Contract Verified</span>
+                        <span className="text-[10px] text-gray-400 font-mono">
+                            Liq. Lock: {vestingLoaded && liquidity ? liquidity.cliffText : "6 Months"}
+                        </span>
                     </div>
                     <div className="h-3 w-px bg-white/10 hidden sm:block"></div>
                     <div className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">

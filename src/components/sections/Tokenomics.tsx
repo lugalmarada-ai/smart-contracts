@@ -3,16 +3,54 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaCoins, FaChartPie, FaExternalLinkAlt, FaLock, FaUsers, FaShieldAlt } from "react-icons/fa";
 import { CONTRACT_ADDRESSES } from "@/config/contracts";
+import { useVesting } from "@/hooks/useVesting";
 
 export default function Tokenomics() {
+    const { liquidity, team, dev, marketing, isLoaded } = useVesting();
+
     const allocation = [
-        { label: "Game Rewards", value: 40, color: "#10B981", vesting: "Play-to-Earn pool distribution" },
-        { label: "Development", value: 15, color: "#3B82F6", vesting: "6 months cliff, 12 months linear" },
-        { label: "Marketing", value: 7, color: "#8B5CF6", vesting: "6 months cliff, 12 months linear" },
-        { label: "Airdrop", value: 3, color: "#F472B6", vesting: "Immediate unlock" },
-        { label: "Presale", value: 10, color: "#00FFFF", vesting: "Immediate unlock" },
-        { label: "Liquidity", value: 15, color: "#EC4899", vesting: "Locked 6 months via smart contract" },
-        { label: "Team", value: 10, color: "#F59E0B", vesting: "1 month cliff, 11 months linear (Verified)" },
+        { 
+            label: "Game Rewards", 
+            value: 40, 
+            color: "#10B981", 
+            vesting: "Play-to-Earn pool distribution" 
+        },
+        { 
+            label: "Development", 
+            value: 15, 
+            color: "#3B82F6", 
+            vesting: isLoaded && dev ? `${dev.cliffText} cliff, ${dev.durationText} linear` : "6 months cliff, 12 months linear" 
+        },
+        { 
+            label: "Marketing", 
+            value: 7, 
+            color: "#8B5CF6", 
+            vesting: isLoaded && marketing ? `${marketing.cliffText} cliff, ${marketing.durationText} linear` : "6 months cliff, 12 months linear" 
+        },
+        { 
+            label: "Airdrop", 
+            value: 3, 
+            color: "#F472B6", 
+            vesting: "Immediate unlock" 
+        },
+        { 
+            label: "Presale", 
+            value: 10, 
+            color: "#00FFFF", 
+            vesting: "Immediate unlock" 
+        },
+        { 
+            label: "Liquidity", 
+            value: 15, 
+            color: "#EC4899", 
+            vesting: isLoaded && liquidity ? `Locked ${liquidity.cliffText} via smart contract` : "Locked 6 months via smart contract" 
+        },
+        { 
+            label: "Team", 
+            value: 10, 
+            color: "#F59E0B", 
+            vesting: isLoaded && team ? `${team.cliffText} cliff, ${team.durationText} linear (Verified)` : "1 month cliff, 11 months linear (Verified)" 
+        },
     ];
 
     const TOKEN_ADDRESS = CONTRACT_ADDRESSES.OKYToken;
@@ -201,7 +239,7 @@ export default function Tokenomics() {
                     <div className="mt-8 p-4 bg-accent/10 border border-accent/30 rounded-lg">
                         <p className="text-sm text-gray-300 text-center">
                             🔒 <strong className="text-white">Team & Development tokens</strong> are vested to ensure long-term commitment.{" "}
-                            <strong className="text-accent">Liquidity is locked for 6 months</strong> (Verified On-Chain).
+                            <strong className="text-accent">Liquidity is locked for {isLoaded && liquidity ? liquidity.cliffText : "6 months"}</strong> (Verified On-Chain).
                         </p>
                     </div>
 
