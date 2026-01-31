@@ -5,24 +5,24 @@ import { FaRocket, FaHammer, FaGlobe } from "react-icons/fa";
 
 const phases = [
     {
-        quarter: "Q4 2025",
-        title: "Foundation",
+        quarter: "Q1 2026",
+        title: "Foundation & Growth",
         icon: <FaRocket />,
-        items: ["Core space combat mechanics", "Basic ship classes & weapons", "$OKY integration", "Beta testing (1,000 pilots)"],
+        items: ["Contracts deployed on Base", "Public Presale Active", "Community building (Discord/TG)", "$OKY Token Audit"],
         color: "text-white"
     },
     {
-        quarter: "Q1 2026",
-        title: "Enhancement",
+        quarter: "Q2 2026",
+        title: "Alpha Systems",
         icon: <FaHammer />,
-        items: ["Fleet system launch", "PvP space battles", "NFT ship marketplace", "Mobile-responsive optimization"],
+        items: ["Core movement & combat mechanics", "Basic ship classes & weapons", "Staking v1 Launch", "Closed Alpha testing"],
         color: "text-primary"
     },
     {
-        quarter: "Q2 2026",
-        title: "Expansion",
+        quarter: "Q3 2026",
+        title: "Beta Expansion",
         icon: <FaGlobe />,
-        items: ["New star systems & sectors", "Advanced ship crafting", "Cross-chain bridge (ETH)", "Space tournament series"],
+        items: ["Fleet management system", "PvP Arena prototype", "NFT ship crafting", "Beta testing (1,000 pilots)"],
         color: "text-secondary"
     }
 ];

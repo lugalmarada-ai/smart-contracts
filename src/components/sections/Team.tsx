@@ -4,10 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const team = [
-    { name: "Captain Nexus", role: "Fleet Commander & Game Director", exp: "10+ years AAA gaming experience", img: "/assets/images/team/captain_nexus.png" },
-    { name: "Engineer Stella", role: "Blockchain & Ship Systems Architect", exp: "DeFi protocol veteran", img: "/assets/images/team/engineer_stella.png" },
-    { name: "Pilot Vex", role: "Community & Fleet Operations", exp: "Built 3 successful gaming communities", img: "/assets/images/team/pilot_vex.png" },
-    { name: "Commander Aura", role: "Visual Design & Space Art", exp: "Award-winning pixel art specialist", img: "/assets/images/team/commander_aura.png" }
+    { name: "N. Vance", role: "Lead Architect & Game Director", exp: "10+ years game dev engine experience", img: "/assets/images/team/captain_nexus.png" },
+    { name: "S. Aris", role: "Blockchain Systems Lead", exp: "DeFi & Smart Contract specialist", img: "/assets/images/team/engineer_stella.png" },
+    { name: "V. Kael", role: "Community & Growth Lead", exp: "Expert in Web3 ecosystem scaling", img: "/assets/images/team/pilot_vex.png" },
+    { name: "A. Nova", role: "Creative Director", exp: "Award-winning visual design background", img: "/assets/images/team/commander_aura.png" }
 ];
 
 export default function Team() {
@@ -50,6 +50,17 @@ export default function Team() {
                 </motion.div>
             ))}
         </div>
+
+        <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center max-w-2xl mx-auto"
+        >
+            <p className="text-xs text-gray-500 font-mono bg-white/5 p-4 rounded-xl border border-white/10">
+                <span className="text-secondary font-bold">TRANSPARENCY NOTE:</span> The OKMAYA core team operates with professional pseudonymous identities to focus on development in the early stages. The team will undergo full KYC verification prior to major CEX listings and institutional partnerships.
+            </p>
+        </motion.div>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const phases = [
         icon: <FaBolt />,
         title: "Phase 2: Revenue Generation",
         color: "text-primary",
-        items: ["NFT ship marketplace (5% commission)", "Staking rewards (15-20% APY)", "Tournament prizes and competitions", "Premium ship upgrades"]
+        items: ["NFT ship marketplace (5% commission)", "Staking rewards (5-12% APY)", "Tournament prizes and competitions", "Premium ship upgrades"]
     },
     {
         icon: <FaInfinity />,

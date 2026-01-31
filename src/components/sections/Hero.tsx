@@ -64,9 +64,9 @@ export default function Hero() {
                     transition={{ delay: 0.8, type: "spring" }}
                     className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-6"
                 >
-                    <Link href="#play" className="btn-primary group flex items-center gap-3">
+                    <Link href="#home" className="btn-primary group flex items-center gap-3">
                         <FaPlay className="group-hover:translate-x-1 transition-transform" />
-                        PLAY NOW
+                        BUY $OKY NOW
                     </Link>
                     <Link href="#trailer" className="btn-secondary flex items-center gap-3 group">
                         <FaVideo className="group-hover:scale-110 transition-transform" />

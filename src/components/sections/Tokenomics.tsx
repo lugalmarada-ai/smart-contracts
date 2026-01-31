@@ -6,13 +6,13 @@ import { CONTRACT_ADDRESSES } from "@/config/contracts";
 
 export default function Tokenomics() {
     const allocation = [
-        { label: "Game Rewards", value: 40, color: "#10B981", vesting: "Game launch distribution" },
+        { label: "Game Rewards", value: 40, color: "#10B981", vesting: "Play-to-Earn pool distribution" },
         { label: "Development", value: 15, color: "#3B82F6", vesting: "6 months cliff, 12 months linear" },
         { label: "Marketing", value: 7, color: "#8B5CF6", vesting: "6 months cliff, 12 months linear" },
         { label: "Airdrop", value: 3, color: "#F472B6", vesting: "Immediate unlock" },
         { label: "Presale", value: 10, color: "#00FFFF", vesting: "Immediate unlock" },
-        { label: "Liquidity", value: 15, color: "#EC4899", vesting: "Locked 12 months" },
-        { label: "Team", value: 10, color: "#F59E0B", vesting: "1 month cliff, 11 months linear" },
+        { label: "Liquidity", value: 15, color: "#EC4899", vesting: "Locked 12 months via smart contract" },
+        { label: "Team", value: 10, color: "#F59E0B", vesting: "6 months cliff, 12 months linear" },
     ];
 
     const TOKEN_ADDRESS = CONTRACT_ADDRESSES.OKYToken;

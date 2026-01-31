@@ -79,7 +79,7 @@ export default function Trailer() {
           
           <div className="text-center mt-12 max-w-2xl mx-auto">
             <p className="text-gray-300 text-lg leading-relaxed">
-                Inspired by the legendary shoot 'em up <span className="text-accent font-bold">Xenon 2: Megablast</span>, OKMAYA REALMS brings that classic vertical-scrolling intensity to the Base network. Experience evolved mechanics, stunning visuals, and the same adrenaline-fueled gameplay that defined a generation.
+                Drawing inspiration from the soul of classics like <span className="text-accent font-bold">Xenon 2: Megablast</span>, OKMAYA REALMS evolves the vertical-scrolling shooter into a modern on-chain odyssey. We combine high-octane 1989-style combat with 2026 technologies: flotas, celestial stations, and a player-driven economy on the Base network.
             </p>
           </div>
         </motion.div>
