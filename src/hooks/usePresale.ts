@@ -83,6 +83,7 @@ export function usePresale() {
         abi: OKY_PRESALE_ABI,
         functionName: 'buyTokensETH',
         value: parseEther(ethAmount),
+        gas: BigInt(200000), // Manually set gas limit for better UX
       });
 
       // Refetch data after successful purchase
@@ -111,6 +112,7 @@ export function usePresale() {
         abi: OKY_PRESALE_ABI,
         functionName: 'buyTokensUSDC',
         args: [usdcAmountWei],
+        gas: BigInt(250000), // Manually set gas limit for better UX
       });
 
       // Refetch data after successful purchase

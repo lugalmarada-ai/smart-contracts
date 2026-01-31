@@ -39,6 +39,7 @@ export function useUSDC() {
         abi: erc20Abi,
         functionName: 'approve',
         args: [PRESALE_ADDRESS, amountWei],
+        gas: BigInt(100000), // Manually set gas limit for better UX
       });
 
       // Refetch allowance after approval

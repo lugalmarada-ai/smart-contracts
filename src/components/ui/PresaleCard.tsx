@@ -44,8 +44,8 @@ export default function PresaleCard() {
 
     const { tokenAddress, holdersCount } = useTokenHolders();
 
-    // Placeholder holders count (update from API or contract later)
-    const displayHoldersCount = holdersCount ?? 1250; // TODO: Replace with real data
+    // Dynamic holders count from hook
+    const displayHoldersCount = holdersCount ?? 0;
 
     // ✅ Dynamic values from smart contract (NO MORE HARDCODED!)
     const PRESALE_PRICE = presalePriceUSD || 0.0035; // From contract PRESALE_PRICE constant

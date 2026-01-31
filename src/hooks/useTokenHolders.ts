@@ -17,28 +17,24 @@ export function useTokenHolders() {
     functionName: 'totalSupply',
   });
 
-  // Fetch holders count from BaseScan API
+  // Fetch holders count from Blockscout API
   useEffect(() => {
     const fetchHoldersCount = async () => {
       try {
-        // BaseScan API endpoint for token holder count
-        // Note: You may need an API key for production use
+        // Blockscout V2 API endpoint for token counters
         const response = await fetch(
-          `https://api.basescan.org/api?module=token&action=tokenholderlist&contractaddress=${OKY_TOKEN_ADDRESS}&page=1&offset=1`
+          `https://base.blockscout.com/api/v2/tokens/${OKY_TOKEN_ADDRESS}/counters`
         );
 
         const data = await response.json();
 
-        if (data.status === '1' && data.result && Array.isArray(data.result)) {
-          // BaseScan doesn't directly provide holder count in this endpoint
-          // We'll use a placeholder for now - in production, integrate with The Graph or paid BaseScan API
-          setHoldersCount(1250); // TODO: Replace with actual API integration
+        if (data && data.token_holders_count) {
+          setHoldersCount(parseInt(data.token_holders_count));
         }
 
         setIsLoading(false);
       } catch (error) {
         console.error('Error fetching holders count:', error);
-        setHoldersCount(1250); // Fallback
         setIsLoading(false);
       }
     };
